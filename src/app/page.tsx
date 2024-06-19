@@ -6,10 +6,10 @@ import { ArrowUpDown, Timer, Workflow } from 'lucide-react'
 import Link from 'next/link'
 
 import EmblaCarousel from '@/components/common/carousel'
-import { EmblaOptionsType } from 'embla-carousel'
+import { type EmblaOptionsType } from 'embla-carousel'
 
 const OPTIONS: EmblaOptionsType = {}
-const SLIDES = [1,2,3,4]
+const SLIDES = [1, 2, 3, 4]
 
 export default function Home() {
   return (
@@ -19,16 +19,15 @@ export default function Home() {
     >
       <div className="flex flex-col gap-6 items-center">
         <Typography className="max-w-2xl" variant="h1">
-          Diseñadora de Moda Profesional 
+          Diseñadora de Moda Profesional
         </Typography>
         <Typography className="max-w-2xl" variant="h5">
-          Mi trabajo implica una combinación de creatividad, pasión, dedicación y trabajo duro para realizar las mejores piezas. 
+          Mi trabajo implica una combinación de creatividad,
+          pasión, dedicación y trabajo duro para realizar
+          las mejores piezas.
         </Typography>
         {/* CHANGE LINK */}
-        <Link
-          href=""
-          target="_blank"
-        >
+        <Link href="" target="_blank">
           <Button size="tiny" variant="ghost">
             {`Encarga aqui`}
           </Button>
@@ -74,7 +73,10 @@ export default function Home() {
             incidents and their solutions. All directly in
             Slack the moment an incident happens.
           </Typography> */}
-          <EmblaCarousel slides={SLIDES} options={OPTIONS} />
+          <EmblaCarousel
+            slides={SLIDES}
+            options={OPTIONS}
+          />
         </div>
         <div className="flex flex-col gap-6 items-center">
           <Typography className="max-w-2xl" variant="h1">

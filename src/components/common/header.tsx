@@ -1,7 +1,7 @@
 'use client'
 import { cn } from '@/lib/utils'
 import Link from 'next/link'
-import { Button } from '@/components/ui/button'
+// import { Button } from '@/components/ui/button'
 import { usePathname } from 'next/navigation'
 import Typography from '@/components/ui/typography'
 import {
@@ -41,26 +41,26 @@ export function Header({ className }: SidebarProps) {
     </Link>
   )
 
-  const getAuthButtons = () => (
-    <div className="flex gap-3 items-center">
-      <Link
-        href="https://map.sistilli.dev/public/coding/SaaS+Boilerplate"
-        target="_blank"
-      >
-        <Typography variant="p">Login</Typography>
-      </Link>
-      <Link
-        href="https://map.sistilli.dev/public/coding/SaaS+Boilerplate"
-        target="_blank"
-      >
-        <Button size="tiny" color="ghost">
-          <Typography variant="p" className="text-black">
-            Sign Up
-          </Typography>
-        </Button>
-      </Link>
-    </div>
-  )
+  // const getAuthButtons = () => (
+  //   <div className="flex gap-3 items-center">
+  //     <Link
+  //       href="https://map.sistilli.dev/public/coding/SaaS+Boilerplate"
+  //       target="_blank"
+  //     >
+  //       <Typography variant="p">Login</Typography>
+  //     </Link>
+  //     <Link
+  //       href="https://map.sistilli.dev/public/coding/SaaS+Boilerplate"
+  //       target="_blank"
+  //     >
+  //       <Button size="tiny" color="ghost">
+  //         <Typography variant="p" className="text-black">
+  //           Sign Up
+  //         </Typography>
+  //       </Button>
+  //     </Link>
+  //   </div>
+  // )
 
   const getHeaderItems = () => {
     return (
