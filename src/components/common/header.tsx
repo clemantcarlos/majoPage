@@ -19,9 +19,10 @@ interface SidebarProps
 export function Header({ className }: SidebarProps) {
   const pathname = usePathname()
   const items = [
+    // Cambiar el link
     {
-      href: 'https://map.sistilli.dev/public/coding/SaaS+Boilerplate',
-      title: 'Book a demo',
+      href: '',
+      title: 'Agenda una cita',
       openInNewTab: true
     }
     // { href: '#pricing', title: 'Features' },
@@ -33,9 +34,9 @@ export function Header({ className }: SidebarProps) {
 
   const getLogo = () => (
     <Link href="/" className="pointer flex items-center">
-      <img src="/logo.svg" className="mr-3" />
+      <img src="/logo.png" className="mr-3 h-8" />
       <Typography className="!text-white !text-base font-medium ">
-        Pandem
+        Majo - Design
       </Typography>
     </Link>
   )
@@ -106,11 +107,11 @@ export function Header({ className }: SidebarProps) {
             <div className="flex items-center gap-x-8 flex-1">
               {getHeaderItems()}
             </div>
-            {getAuthButtons()}
+            {/* {getAuthButtons()} */}
           </div>
           {/* Mobile */}
           <div className="md:hidden flex gap-x-4 items-center">
-            {getAuthButtons()}
+            {/* {getAuthButtons()} */}
             <Drawer direction="right">
               <DrawerTrigger asChild>
                 <MenuIcon />
