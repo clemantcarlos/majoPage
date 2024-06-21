@@ -80,15 +80,16 @@ export default function Home() {
         </div>
         <div className="flex flex-col gap-6 items-center">
           <Typography className="max-w-2xl" variant="h1">
-            Get in touch
+            Contactame ahora
           </Typography>
-          <div>Book a demo, or hop on a call</div>
+          <div>Agenda una cita, o haz una llamada</div>
           <Link
-            href="https://map.sistilli.dev/public/coding/SaaS+Boilerplate"
+          // CAMBIAR LINK
+            href=""
             target="_blank"
           >
             <Button size="tiny" variant="ghost">
-              {`Book now`}
+              {`Contactame`}
             </Button>
           </Link>
         </div>
