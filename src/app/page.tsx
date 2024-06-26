@@ -84,7 +84,7 @@ export default function Home() {
           </Typography>
           <div>Agenda una cita, o haz una llamada</div>
           <Link
-          // CAMBIAR LINK
+            // CAMBIAR LINK
             href=""
             target="_blank"
           >
